@@ -22,14 +22,17 @@ public class MainForm {
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
-	//apariencia de sistema	
+	
+	//apariencia de sistema	(Debe estar en un try/catch)
 	try
 	{
 	UIManager.setLookAndFeel(
 	UIManager.getSystemLookAndFeelClassName());
 	}
-	catch(Exception e) { ... } // Debe estar en un try/catch
-		
+	catch(Exception e) 
+	{} 
+	//
+	
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
