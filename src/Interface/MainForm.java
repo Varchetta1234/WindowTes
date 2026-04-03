@@ -22,6 +22,14 @@ public class MainForm {
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
+	//apariencia de sistema	
+	try
+	{
+	UIManager.setLookAndFeel(
+	UIManager.getSystemLookAndFeelClassName());
+	}
+	catch(Exception e) { ... } // Debe estar en un try/catch
+		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
